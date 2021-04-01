@@ -1,0 +1,20 @@
+{
+  "name": "desafio-newtail-got",
+  "version": "1.0.0",
+  "description": "## Desafio Newtail: API Game of Thrones",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HallenWeaver/desafio-newtail-got.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HallenWeaver/desafio-newtail-got/issues"
+  },
+  "homepage": "https://github.com/HallenWeaver/desafio-newtail-got#readme"
+}

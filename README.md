@@ -10,5 +10,5 @@
 
 ### Versionamento
 
-#### Versão 0.0.1
+#### Versão 1.0.0
 Criação do projeto, versão inicial do documento.
