@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/HallenWeaver/desafio-newtail-got/issues"
   },
-  "homepage": "https://github.com/HallenWeaver/desafio-newtail-got#readme"
+  "homepage": "https://github.com/HallenWeaver/desafio-newtail-got#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "config": "^3.3.6",
+    "express": "^4.17.1"
+  }
 }
