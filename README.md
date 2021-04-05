@@ -53,8 +53,8 @@ O projeto aceita três rotas, a saber:
     }
     ```
     Onde o parâmetro `limit` indica o número de resultados a serem retornados do banco, e o parâmetro `skip` indica o número da página retornada.
-    ``` javascript
     * Para encontrar uma casa específica, envie um objeto no formato:
+    ``` javascript
     {
         "query": {
             "name": String
