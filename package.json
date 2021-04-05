@@ -1,10 +1,11 @@
 {
   "name": "desafio-newtail-got",
   "version": "1.0.0",
-  "description": "## Desafio Newtail: API Game of Thrones",
+  "description": "Desafio Newtail: API Game of Thrones",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nyc mocha 'test/**/*.js' --recursive --timeout 60000 --exit",
+    "start": "nodemon ./server.js --exec babel-node --presets '@babel/preset-env'"
   },
   "repository": {
     "type": "git",
@@ -18,8 +19,25 @@
   },
   "homepage": "https://github.com/HallenWeaver/desafio-newtail-got#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
     "config": "^3.3.6",
-    "express": "^4.17.1"
+    "core-js": "^2.6.12",
+    "express": "^4.17.1",
+    "mocha-junit-reporter": "^2.0.0",
+    "mongoose": "^5.12.3",
+    "regenerator-runtime": "^0.10.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.14",
+    "@babel/node": "^7.13.13",
+    "@babel/plugin-transform-runtime": "^7.13.10",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/register": "^7.13.14",
+    "@babel/runtime": "^7.13.10",
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2",
+    "nyc": "^15.1.0",
+    "sinon-chai": "^3.6.0",
+    "supertest": "^6.1.3"
   }
 }
