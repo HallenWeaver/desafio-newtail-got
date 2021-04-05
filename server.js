@@ -1,14 +1,18 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import routes from './routes/houseRoutes';
+import yenv from 'yenv';
 
-/* Connection Constants */
-const PORT = 8080;
-const MONGO_URL = `mongodb://hw:${encodeURIComponent('#27HW_arm')}@localhost:27017/admin`;
-const AUTH = { useNewUrlParser: true, useUnifiedTopology: true}
 
 /* Application Setup*/
 const app = express();
+const env = yenv('env.yaml', {env: 'development'});
+
+/* Connection Constants */
+const PORT = 8080;
+const MONGO_URL = `mongodb://${env.MONGO_USERNAME}:${encodeURIComponent(env.MONGO_PASSWORD)}@${env.MONGO_ADDRESS}`;
+const AUTH = { useNewUrlParser: true, useUnifiedTopology: true}
+
 
 /* Mongoose Setup */
 mongoose.Promise = global.Promise;
