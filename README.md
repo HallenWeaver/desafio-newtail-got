@@ -74,6 +74,6 @@ O projeto aceita três rotas, a saber:
     }
     ```
 
-    #### Testes
-    Para efetuar os testes unitários e exibir a cobertura, execute:
+#### Testes
+Para efetuar os testes unitários e exibir a cobertura, execute:
     `npm run test`
